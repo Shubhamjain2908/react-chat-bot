@@ -7,21 +7,19 @@ import About from './pages/About';
 import Shop from './shop/Shop';
 import Chatbot from './chatbot/Chatbot';
 
-const App = () => {
-    return (
-        <div>
-            <BrowserRouter>
-                <div>
-                    <Header />
-                    <Route exact path="/" component={Landing} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/shop" component={Shop} />
-                    <Chatbot />
-                </div>
-            </BrowserRouter>
-        </div>
+const App = () => (
+    <div>
+        <BrowserRouter>
+            <div>
+                <Header />
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/shop" component={Shop} />
+                <Chatbot />
+            </div>
+        </BrowserRouter>
+    </div>
 
-    );
-}
+);
 
 export default App;
